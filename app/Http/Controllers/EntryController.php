@@ -40,7 +40,7 @@ class EntryController extends Controller
 
     public function edit(Entry $entry)
     {
-      return view('entries.edit', compact('entry'));
+      // return view('entries.edit', compact('entry'));
     }
 
 
