@@ -13,7 +13,6 @@
                 {{ session('status') }}
               </div>
             @endif
-
             {{$entry->content}}
             <hr>
             @can ('update', $entry)
@@ -21,7 +20,12 @@
                 Edit Entry
               </a>
             @endcan
-
+          </div>
+          <div class="card-footer">
+            Author:
+            <a href="{{'@'.$entry->user->username}}">
+              {{$entry->user->name}}
+            </a>
 
           </div>
         </div>
